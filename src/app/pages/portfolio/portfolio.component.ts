@@ -10,18 +10,20 @@ declare var jQuery: any;
 
 export class PortfolioComponent implements OnInit {
 
+  renderedMarkdown: string = ''; 
+
   person = {
     name: 'Gustavo Malimpensa',
     profession: 'Software Developer',
     url: 'assets/img/eu.png',
-    email:'gumalimpensa@gmail.com',
-    phone:'(19) 99937-2133'
+    email: 'gumalimpensa@gmail.com',
+    phone: '(19) 99937-2133'
   }
 
   constructor() { }
 
   ngOnInit(): void {
-
+    
     (function ($) {
       /*--/ Star Typed /--*/
       if ($('.text-slider').length == 1) {
@@ -35,7 +37,6 @@ export class PortfolioComponent implements OnInit {
         });
       }
     })(jQuery);
-
   }
 
 }

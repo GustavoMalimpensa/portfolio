@@ -8,6 +8,7 @@ import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ServicesComponent } from './pages/services/services.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,8 +20,7 @@ import { ServicesComponent } from './pages/services/services.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
