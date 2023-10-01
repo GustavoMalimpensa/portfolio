@@ -1,9 +1,6 @@
-/*--------------------------------------------------------------
-  # Intro Section
-  --------------------------------------------------------------*/
-
-iframe {
-    border-style: none;
+.iframe {
+    max-width: 100%;
+    height: auto;
 }
 
 .intro {
@@ -34,21 +31,9 @@ iframe {
     font-size: 3rem;
 }
 
-@media (min-width: 768px) {
-    .intro .intro-title {
-        font-size: 4.5rem;
-    }
-}
-
 .intro .intro-subtitle {
     font-size: 1.5rem;
     font-weight: 300;
-}
-
-@media (min-width: 768px) {
-    .intro .intro-subtitle {
-        font-size: 2.5rem;
-    }
 }
 
 .intro .text-slider-items {
@@ -68,12 +53,6 @@ iframe {
     font-size: 3rem;
 }
 
-@media (min-width: 768px) {
-    .intro-single .intro-title {
-        font-size: 3.5rem;
-    }
-}
-
 .intro-single .breadcrumb {
     background-color: transparent;
     color: #0078ff;
@@ -91,10 +70,6 @@ iframe {
     color: #fff;
 }
 
-/*--------------------------------------------------------------
-  # About
-  --------------------------------------------------------------*/
-
 .about-mf .box-shadow-full {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -107,13 +82,6 @@ iframe {
 
 .about-mf .about-img img {
     margin-left: 10px;
-}
-
-@media (min-width: 767px) {
-    .about-mf .box-pl2 {
-        margin-top: 3rem;
-        padding-left: 0rem;
-    }
 }
 
 .skill-mf span {
@@ -130,4 +98,24 @@ iframe {
 .skill-mf .progress .progress-bar {
     height: .7rem;
     background-color: #0078ff;
+}
+
+
+@media (min-width: 768px) {
+    .intro .intro-title {
+        font-size: 4.5rem;
+    }
+    .intro .intro-subtitle {
+        font-size: 2.5rem;
+    }
+    .intro-single .intro-title {
+        font-size: 3.5rem;
+    }
+    .about-mf .box-pl2 {
+        margin-top: 3rem;
+        padding-left: 0rem;
+    }
+    .iframe {
+        height: 220px;
+    }
 }
